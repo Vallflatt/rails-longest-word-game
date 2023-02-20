@@ -1,0 +1,8 @@
+<h1>Result</h1>
+
+<% if @success == false %>
+  <p><%= @error %></p>
+<% else %>
+  <p>Congratulations! <%= @answer  %> is a valid English word!</p>
+<% end %>
+<%= link_to "Play again", "/new" %>
